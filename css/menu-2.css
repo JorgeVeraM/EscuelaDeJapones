@@ -1,0 +1,187 @@
+*,*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+header{
+   
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    font-weight: bold;
+    justify-content:space-around ;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+    transition: 1.5s;
+     background-color: #443345
+    
+   
+
+}
+
+header.abajo{
+    background-color: #443345;
+  
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}
+
+.logo{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+
+
+
+.menu1 li {
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    top: 5px;
+    left: 200px;
+    
+   
+}
+
+.menu1 li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    
+}
+
+.menu1 li a:hover{
+    color: #ED9945;
+    transition: ease 0.80s;
+    
+}
+
+
+.img li {
+    display: inline-block;  
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    left: 200px;
+    top: 8px;
+    
+}
+
+.img li a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 2px;
+    color: #ffff;
+    
+}
+
+.img li a:hover {
+    color: #ED9945;
+    transition: ease 0.80s;
+}
+
+
+
+
+
+/* footer */
+
+
+footer{
+    width: 100%;
+    display: block;
+    background-color: #FCFBFB;
+    position: relative;
+    margin-top: 100px;
+    
+  
+}
+
+
+footer h3{
+    text-align: center;
+    position: relative;
+    top: 40px;
+    color: #000;
+   
+}
+
+
+
+footer .logo-2 {
+    background-image: url(./images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100px ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+footer ul li {
+    display: inline-block;
+    position: relative;
+    left: 915px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer ul li a:hover{
+    color: #443345;
+}
+
+.location , .address-card , .envelope{
+    width: 400px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 50px;
+    position: relative;
+    left: 250px;
+    text-align: center;
+    color: #000;
+}
+
+.locat ,.adress{
+    float: left;
+    position: relative;
+    left: 150px;
+    color: #000;
+}
+
+footer .envelope1{
+    float: left;
+    position: relative;
+    left: 110px;
+
+}
+
+footer h4 .p {
+   
+    color: #000;
+    
+}
+
+footer h4{
+   
+    font-size: 14px;
+    
+}
