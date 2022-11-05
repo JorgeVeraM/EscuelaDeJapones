@@ -1,0 +1,310 @@
+
+
+
+.button {
+    position: relative;
+    padding: 20px 30px;
+    border-radius: 7px;
+    width: 250px;
+    border: 1px solid rgb(102, 62, 118);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+  
+  .button:hover {
+    background: rgb(102, 62, 118);
+    box-shadow: 0 0 30px 5px rgba(102, 62, 118);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  .button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  
+  
+
+
+/*cards*/
+
+ 
+
+
+.content3{
+    width: 1500px;
+    height: 600px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    position: relative;
+    top: 250px;
+    border-radius: 5px;
+    
+  }
+  .card , .card1 , .card2{
+    margin-top:100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    position: relative;
+    left: 150px;
+  }
+  
+  /*card1*/
+  
+  .card1 {
+    width: 300px;
+    height: 384px;
+    border-radius: 20px;
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+     url(./images/curso\ para\ estudiantes.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    display: inline-block;
+   }
+   
+   .card-details1 {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+   .card-button1 {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #443345;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    text-align: center;
+   }
+   
+   .text-body1 {
+    color: #fff;
+   }
+   
+   /*Text*/
+   .text-title1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+  
+   }
+   
+   /*Hover*/
+   .card1:hover:hover {
+    border-color: #443345;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card1:hover:hover .card-button1 {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+  
+  
+  
+   /*card 2*/
+   .card2 {
+    width: 300px;
+    height: 384px;
+    border-radius: 20px;
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+     url(./images/curso\ para\ niños.png);
+     background-size: cover;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    display: inline-block;
+   }
+   
+   .card-details2 {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+   .card-button2 {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #443345;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    text-align: center;
+   }
+   
+   .text-body2 {
+    color: #fff;
+   }
+   
+   /*Text*/
+   .text-title2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+   
+   }
+   
+   /*Hover*/
+   .card2:hover:hover {
+    border-color: #443345;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card2:hover:hover .card-button2 {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+  
+   /*card 3 */
+  
+   .card {
+    width: 300px;
+    height: 384px;
+    border-radius: 20px;
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+     url(./images/curso\ de\ chino.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    display: inline-block;
+   }
+   
+   .card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+   .card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #443345;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    text-align: center;
+   }
+   
+   .text-body {
+    color: #fff;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    
+   }
+   
+   /*Hover*/
+   .card:hover:hover {
+    border-color: #443345;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card:hover:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+  
+ 
+  
